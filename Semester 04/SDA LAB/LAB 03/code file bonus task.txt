@@ -1,0 +1,60 @@
+package k213868;
+
+public class main {
+    public static void main(String[] args) {
+        Student student = new Student();
+        Course sda = new Course();
+        sda.setCourseName("SDA");
+        student.setCourse(sda);
+        Course savedCourse = student.getCourse();
+        System.out.println("Student Course: "+savedCourse.getCourseName());
+    }
+}
+
+
+class Student {
+    public Course course;
+    public String Email;
+    public String Address;
+    public String Phone;
+    public String Name;
+    public Course getCourse() {
+        return course;
+    }
+    public void setCourse(Course course)
+    {
+        this.course = course;
+    }
+    public String getEmail() {
+        return Email;
+    }
+    public void setEmail(String Email) {
+        this.Email = Email;
+    }
+    public String getAddress() {
+        return Address;
+    }
+    public void setAddress(String
+                                   Address) {
+        this.Address = Address;
+    }
+}
+
+
+class Course {
+    public String CourseName;
+    public String getCourseName() {
+        return CourseName;
+    }
+    public void setCourseName(String
+                                      CourseName) {
+        this.CourseName =
+                CourseName;
+    }
+    public void editCourse() {
+    }
+    public void deleteCourse() {
+    }
+    public void addCourse() {
+    }
+}
